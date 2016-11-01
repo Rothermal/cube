@@ -1,1 +1,1 @@
- cube game made with Three.js
+ cube  made with Three.js
