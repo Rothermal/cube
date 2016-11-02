@@ -5,9 +5,11 @@ var geometry;
 var material;
 var mesh;
 
+$(document).ready(function(){
+    init();
+    animate();
+});
 
-init();
-animate();
 
 function init(){
     scene = new THREE.Scene();

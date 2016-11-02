@@ -34,25 +34,42 @@ module.exports = function(grunt) {
         //    }
         //},
         copy: {
-            angular: {
+            //angular: {
+            //    expand: true,
+            //    cwd: 'node_modules',
+            //    src: [
+            //        "angular/*.js",
+            //        "angular/*.map",
+            //        "angular-animate/*.js",
+            //        "angular-animate/*.map",
+            //        "angular-aria/*.js",
+            //        "angular-material/*.js",
+            //        "angular-messages/*.js",
+            //        "angular-route/*.js",
+            //        "angular-route/*.map",
+            //        "angular-ui-bootstrap/dist/*.js",
+            //        "angular-ui-bootstrap/dist/*.css",
+            //        "angular-smart-table/dist/*.js",
+            //        "angular-smart-table/dist/*.map"
+            //    ],
+            //    "dest": "server/public/assets/vendors/"
+          //  },
+            Jquery:{
                 expand: true,
                 cwd: 'node_modules',
-                src: [
-                    "angular/*.js",
-                    "angular/*.map",
-                    "angular-animate/*.js",
-                    "angular-animate/*.map",
-                    "angular-aria/*.js",
-                    "angular-material/*.js",
-                    "angular-messages/*.js",
-                    "angular-route/*.js",
-                    "angular-route/*.map",
-                    "angular-ui-bootstrap/dist/*.js",
-                    "angular-ui-bootstrap/dist/*.css",
-                    "angular-smart-table/dist/*.js",
-                    "angular-smart-table/dist/*.map"
+                src:[
+                    "jquery/dist/jquery.min.js",
+                    "jquery/dist/jquery.min.map"
                 ],
-                "dest": "server/public/assets/vendors/"
+                "dest": "server/public/assets/vendors"
+            },
+            Three:{
+                expand: true,
+                cwd: 'node_modules',
+                src:[
+                    "three/build/three.min.js"
+                ],
+                "dest": "server/public/assets/vendors"
             },
             html: {
                 expand: true,
