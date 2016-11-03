@@ -26,13 +26,13 @@ module.exports = function(grunt) {
                 dest: 'server/public/assets/scripts/client.min.js'
             }
         },
-        //sass: {
-        //    dist: {
-        //        files: {
-        //            'server/public/assets/styles/style.css': 'client/styles/style.scss'
-        //        }
-        //    }
-        //},
+        sass: {
+            dist: {
+                files: {
+                    'server/public/assets/styles/style.css': 'client/styles/style.scss'
+                }
+            }
+        },
         copy: {
             //angular: {
             //    expand: true,
@@ -98,8 +98,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    //grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     //grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['copy', 'jshint', 'uglify']);
+    grunt.registerTask('default', ['copy', 'jshint', 'uglify','sass']);
 };
