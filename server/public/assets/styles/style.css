@@ -1,7 +1,7 @@
-.world {
-  position: absolute;
+#world {
+  position: fixed;
   width: 800px;
-  height: 800px;
+  height: 450px;
   overflow: hidden;
   background: linear-gradient(#e4e0ba, #f7d9aa); }
 
